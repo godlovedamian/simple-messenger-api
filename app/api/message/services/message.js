@@ -23,7 +23,6 @@ module.exports = {
    * @returns {*}
    */
   filterOldMessages: (messages, dateFilter) => {
-    console.log({messages, dateFilter});
     return messages.filter(message => new Date(message.created_at) > new Date(dateFilter));
   },
 
